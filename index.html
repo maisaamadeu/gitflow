@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Flow</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: floatAnimation 1s infinite alternate;
+            text-align: center;
+            width: 400px;
+        }
+
+        h1, p {
+            color: #333;
+            margin: 0;
+        }
+
+        h1 {
+            padding-top: 20px;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: max-content;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        @keyframes floatAnimation {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Git Flow</h1>
-    <p>Esse é um texto legal</p>
+    <div class="container">
+        <h1>Git Flow</h1>
+        <p>Esse é um texto legal</p>
+        <img src="https://wac-cdn.atlassian.com/dam/jcr:cc0b526e-adb7-4d45-874e-9bcea9898b4a/04%20Hotfix%20branches.svg?cdnVersion=1375" alt="Git Flow Image">
+    </div>
 </body>
 </html>
