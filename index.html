@@ -23,7 +23,12 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             animation: floatAnimation 1s infinite alternate;
             text-align: center;
-            width: 500px;
+            width: 700px;
+            height: 500px;  
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         h1, p {
@@ -35,7 +40,7 @@
             padding-top: 20px;
         }
 
-        p {
+        p { 
             margin: 20px 0;
         }
 
@@ -43,6 +48,23 @@
             max-width: 400px;
             height: auto;
             margin-top: 20px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            width: 500px;
+        }
+
+        button:hover {
+            background-color: #2078b4;
         }
 
         @keyframes floatAnimation {
@@ -60,6 +82,13 @@
         <h1>Git Flow</h1>
         <p>O Git Flow é um modelo de fluxo de trabalho para o sistema de controle de versão Git, desenvolvido para facilitar a colaboração e o gerenciamento de projetos de software. Criado por Vincent Driessen, o Git Flow define um conjunto de convenções e práticas recomendadas para organizar branches, releases e hotfixes em um projeto Git.</p>
         <img src="https://wac-cdn.atlassian.com/dam/jcr:cc0b526e-adb7-4d45-874e-9bcea9898b4a/04%20Hotfix%20branches.svg?cdnVersion=1375" alt="Git Flow Image">
+        <button onclick="showAlert()">Clique-me</button>
     </div>
+
+    <script>
+        function showAlert() {
+            alert("Botão clicado! Mensagem de alerta.");
+        }
+    </script>
 </body>
 </html>
